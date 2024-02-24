@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel = "stylesheet" href = "styles.css">
+          <title>Gautami's Kitchen</title>
+     </head>
+
+     <body class = "text-gray-600 font-body dark:text-gray-50 transition ease-out duration-500">
+          <!-- Content Wrapper -->
+          <div class = "grid md:grid-cols-4">
+<!--Start Nav-->
+               <div class = " md:col-span-1 md:flex md:justify-end text-lg bg-slate-100 dark:bg-zinc-950">
+                    <nav class = "text-right">
+                         <div class = "flex justify-between items-center">
+                              <h1 class = "font-bold uppercase p-4 border-b border-gray-400">
+                                   <a href = "/" class = "hover:text-gray-800">Gautami's Kitchen</a>
+                              </h1>
+                                   
+                              <div class = "px-4 cursor-pointer md:hidden" id = "burger">
+                                   <svg class = "w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                        </svg>
+                                        
+                              </div>
+                         </div>
+                         <ul class = "text-base mt-6 hidden md:block pb-10 menu">
+                              <li class = "text-gray-700 dark:text-gray-100 font-extrabold py-1 border-r-4 border-primary ">
+                                   <a href = "#" class = "px-4 text-lg flex justify-end hover:scale-105 transition ease-out duration-300">
+                                        <span>Home</span>
+
+                                        <svg class = "w-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                           </svg>
+                                           
+                                   </a>
+                              </li>
+
+                              <li class = "py-1 border-r-4 border-slate-100 dark:border-zinc-950">
+                                   <a href = "#" class = "px-4 flex justify-end hover:scale-105 transition ease-out duration-300">
+                                        <span>About</span>
+
+                                        <svg class = "w-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                                           </svg>
+                                           
+                                   </a>
+                              </li>
+                              
+                              <li class = "py-1 border-r-4 border-slate-100 dark:border-zinc-950">
+                                   <a href = "https://www.instagram.com/gautami_khadkatkar/" target = "_blank" class = "px-4 mt-7 flex justify-end hover:scale-105 transition ease-out duration-300">
+                                   <span>Instagram</span>
+                                        <svg class = "h-6 w-6 ml-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" stroke = "currentColor" fill = "currentColor" stroke-width = "0.05" height="100" viewBox="0 0 24 24">
+                                             <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
+                                         </svg>
+                                   </a>
+                              </li>
+
+                              <li class = "py-1 border-r-4 border-slate-100 dark:border-zinc-950">
+                                   <a href = "https://www.facebook.com/gautami.kedar" target = "_blank" class = "px-4 flex justify-end hover:scale-105 transition ease-out duration-300">
+                                   <span>Facebook</span>
+                                        <svg class = "w-6 h-6 ml-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" stroke = "currentColor" fill = "currentColor" stroke-width = "0.05" viewBox="0 0 24 24">
+                                             <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.014467 17.065322 19.313017 13.21875 19.898438 L 13.21875 14.384766 L 15.546875 14.384766 L 15.912109 12.019531 L 13.21875 12.019531 L 13.21875 10.726562 C 13.21875 9.7435625 13.538984 8.8710938 14.458984 8.8710938 L 15.935547 8.8710938 L 15.935547 6.8066406 C 15.675547 6.7716406 15.126844 6.6953125 14.089844 6.6953125 C 11.923844 6.6953125 10.654297 7.8393125 10.654297 10.445312 L 10.654297 12.019531 L 8.4277344 12.019531 L 8.4277344 14.384766 L 10.654297 14.384766 L 10.654297 19.878906 C 6.8702905 19.240845 4 15.970237 4 12 C 4 7.5698774 7.5698774 4 12 4 z"></path>
+                                        </svg>
+                                   </a>
+                              </li>
+                         </ul>
+                    </nav>
+               </div> <!--End Nav-->
+               
+<!--Start Main Section-->
+               <main class = "px-16 py-6 bg-slate-200 dark:bg-zinc-900 md:col-span-3"> 
+                    <div class = "flex justify-center md:justify-end items-center">
+                         <a href = "#" class = "btn  hover:bg-primary hover:text-white text-primary border-primary md:border-2 transition ease-out duration-500">Log in</a>
+                         
+                         <a href = "#" class = "btn hover:bg-primary hover:text-white text-primary border-primary md:border-2 ml-2 transition ease-out duration-500">Sign Up</a>
+
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id = "moon" class="ml-5 w-6 h-6 cursor-pointer hover:scale-110 active:scale-90 transition ease-out duration-300">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                         </svg>
+
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id = "sun" class="ml-5 w-6 h-6 cursor-pointer hover:scale-110 active:scale-90 transition ease-out duration-300">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                         </svg>
+                    </div>
+
+                    <header>
+                         <h2 class = "text-6xl text-gray-700 dark:text-gray-100 font-semibold">Recipes</h2>
+                         <h3 class = "text-2xl dark:text-gray-400 font-semibold">By Gautami</h3>
+                    </header>
+
+                    <div>
+                         <h4 class = "font-bold text-lg mt-12 pb-2 border-b border-gray-400">Desserts</h4>
+                         
+<!--Dessert cards go here-->
+                         <div class = "mt-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"> 
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/mango-sticky-rice.png" alt = "mango-sticky-rice" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Thai Mango Sticky Rice</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             30 mins
+                                        </span>
+                                   </div>
+                              </div>                              
+                              
+                              
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/strawberry-milkshake.png" alt = "strawberry-milkshake" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Strawberry Milkshake</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             10 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/mango-lassi.png" alt = "mango-lassi" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Mango Lassi</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             10 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/berry-smoothie.png" alt = "berry-smoothie" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Berry Smoothie</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             10 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+                              
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/mango-shreekhand.png" alt = "mango-shreekhand" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Mango Shreekhand</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             3 hours
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/mango-malai-barfi.png" alt = "mango-malai-barfi" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Mango Malai Barfi</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             2 hours
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+
+
+                         <h4 class = "font-bold mt-12 pb-2 border-b border-gray-200">     Experiments</h4>
+<!--Experiment cards go here-->
+                         <div class = "mt-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"> 
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/tandoori-chicken.png" alt = "tandoori-chicken" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Tandoori Chicken</span>
+                                        <span class = "block text-gray-500 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             2 hours
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/pumpkin-puri.png" alt = "pumpkin-puri" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Pumpkin Puri</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             30 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/appe.png" alt = "appe" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Appe</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             30 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/continental-breakfast.png" alt = "continental-breakfast" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Continental Breakfast</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             20 mins
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/onigiri.png" alt = "onigiri" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Onigiri</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             1 hour
+                                        </span>
+                                   </div>
+                              </div>
+
+
+                              <div class = "card transition ease-out duration-500">
+                                   <img src = "images/sabudana-wada.png" alt = "sabudana-wada" class = "w-full h-auto object-cover">
+                                   <div class = "m-4">
+                                        <span class = "font-bold">Sabudana Wada</span>
+                                        <span class = "block text-gray-400 text-sm">Recipe By Gautami Khadkatkar</span>
+                                   </div>
+
+                                   <div class = "badge">
+                                        <svg class = "w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                           </svg>
+                                        <span>
+                                             30 mins
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class = "flex justify-center ">
+                              <div class = "btn my-10 bg-secondary-100 dark:bg-zinc-600 text-secondary-200 dark:text-gray-300 hover:shadow-inner transform hover:bg-opacity-50 transition ease-out duration-500">
+                                   Load More
+                              </div>
+                         </div>
+                    </div>
+               </main> <!--End Main Section-->
+          </div>
+
+          <script src = "index.js"></script>
+     </body>
+</html>
